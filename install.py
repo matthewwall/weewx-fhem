@@ -17,5 +17,6 @@ class FHEMInstaller(ExtensionInstaller):
                     'fhem': {
                         'skin':'fhem',
                         'HTML_ROOT':'fhem'}}},
-            files=[('skins/fhem', ['skins/fhem/fhem.txt.tmpl'])]
+            files=[('skins/fhem', ['skins/fhem/fhem.txt.tmpl',
+                                   'skins/fhem/skin.conf'])]
             )
