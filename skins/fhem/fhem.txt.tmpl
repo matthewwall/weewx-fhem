@@ -1,5 +1,34 @@
 #set $fhem_dateformat = "%Y%m%d%H%M"
 time: $current.dateTime.format($fhem_dateformat)
+
+#if $Extras.schema == 'wview'
+inTemp: $current.inTemp.raw
+outTemp: $current.outTemp.raw
+extraTemp1: $current.extraTemp1.raw
+extraTemp2: $current.extraTemp2.raw
+extraTemp3: $current.extraTemp3.raw
+inHumidity: $current.inHumidity.raw
+outHumidity: $current.outHumidity.raw
+extraHumid1: $current.extraHumid1.raw
+extraHumid2: $current.extraHumid2.raw
+barometer: $current.barometer.raw
+pressure: $current.pressure.raw
+altimeter: $current.altimeter.raw
+windSpeed: $current.windSpeed.raw
+windDir: $current.windDir.raw
+windGust: $current.windGust.raw
+windGustDir: $current.windGustDir.raw
+rain: $current.rain.raw
+rainRate: $current.rainRate.raw
+dewpoint: $current.dewpoint.raw
+windchill: $current.windchill.raw
+heatindex: $current.heatindex.raw
+ET: $current.ET.raw
+radiation: $current.radiation.raw
+UV: $current.UV.raw
+#end if
+
+#if $Extras.schema == 'klimalogg'
 temp0: $current.temp0.degree_C.raw
 temp0maxday: $day.temp0.max.raw
 temp0minday: $day.temp0.min.raw
@@ -100,3 +129,4 @@ batt6: $current.batteryStatus6.raw
 batt7: $current.batteryStatus7.raw
 batt8: $current.batteryStatus8.raw
 signalquality: $current.rxCheckPercent.formatted
+#end if
