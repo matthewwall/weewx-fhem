@@ -4,7 +4,7 @@ Installation instructions:
 
 1) run the installer:
 
-setup.py install --extension weewx-fhem.tgz
+wee_extension --install weewx-fhem.tgz
 
 2) restart weewx:
 

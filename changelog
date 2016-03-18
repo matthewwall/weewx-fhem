@@ -1,2 +1,5 @@
+0.2 18mar2016
+* update readme with instructions for wee_extension instead of setup.py
+
 0.1 18apr2015
 * initial packaged release

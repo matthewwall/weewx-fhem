@@ -8,7 +8,7 @@ def loader():
 class FHEMInstaller(ExtensionInstaller):
     def __init__(self):
         super(FHEMInstaller, self).__init__(
-            version="0.1",
+            version="0.2",
             name='fhem',
             description='report that emits data in FHEM format',
             author="Hans (Luc) Heijst",
